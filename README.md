@@ -22,7 +22,22 @@ From medical scan to working AI code.
 ## 🚀 Run it locally
 
 ```bash
+git clone https://github.com/scantocode/fracture-detection-webapp
+cd fracture-detection-webapp
 pip install -r requirements.txt
+```
+
+**Get the model:** download `best.pt` from the
+[**Releases page**](https://github.com/scantocode/fracture-detection-webapp/releases/tag/v1.0)
+and place it in the project root, next to `app.py`.
+
+> 💡 Want to train your own from scratch? Follow the free
+> **[Episode 4 training tutorial](https://youtube.com/@scantocode)** — it walks you
+> through the whole process step by step.
+
+Then run:
+
+```bash
 streamlit run app.py
 ```
 
@@ -41,7 +56,7 @@ Then open **http://localhost:8501** in your browser.
 | File | Description |
 |------|-------------|
 | `app.py` | The full Streamlit web app |
-| `best.pt` | Trained YOLO11 fracture-detection model |
+| `best.pt` | Trained YOLO11 model — [download from Releases](https://github.com/scantocode/fracture-detection-webapp/releases/tag/v1.0) (or train your own in [Episode 4](https://youtube.com/@scantocode)) |
 | `requirements.txt` | Python dependencies |
 | `.streamlit/config.toml` | Light-theme UI config |
 
